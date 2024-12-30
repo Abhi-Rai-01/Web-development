@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!--Styling-->
+    <style type="text/css">
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 30px;
+            margin-bottom: 25px;
+            font-family: arial;
+        }
+        .Shopper{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .tabs{
+            margin-top: 10px;
+        }
+        .menu{
+            padding-right: 30px;
+        }
+        .icons span{
+            padding-right: 10px;
+        }
+        .icons{
+            margin-top: 10px;
+        }
+        .items{
+            font-size: 12px;
+            color: white;
+            background-color: salmon;
+            vertical-align: super;
+            height: 13px;
+            width: 2px;
+            padding-left: 3px;
+            display: inline-block;
+            border-radius: 20px;
+        }
+        article{
+            background-color: black;
+            color: white;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        .bi-lightning-charge-fill{
+            color: goldenrod;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!--Header Part-->
+    <header>
+        <div class="Shopper">
+            Shopper.
+        </div>
+        <nav class="tabs">
+            <span class="menu">Home</span>
+            <span class="menu">Catalog</span>
+            <span class="menu">Shop</span>
+            <span class="menu">Pages</span>
+            <span class="menu">Blogs</span>
+            <span class="menu">Docs</span>
+        </nav>
+        <nav  class="icons">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart-plus">
+                <span class="items">2</span>
+            </span>
+        </nav>
+    </header>
+    <!--Section Part-->
+    <article>
+        <marquee>
+            <div>
+                <spsn class="bi bi-lightning-charge-fill"></spsn>
+                <spsn>HAPPY HOLIDAY DEALS ON EVERYTHING</spsn>
+                <spsn class="bi bi-lightning-charge-fill"></spsn>
+            </div>
+        </marquee>
+    </article>
+</body>
+</html>

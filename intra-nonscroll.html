@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        nav{
+            margin-left: 0px;
+        }
+        nav span{
+            margin-left: 200px;
+        }
+        section{
+            display: flex;
+            flex-direction: row;
+            margin-left: 200px;
+        }
+        .card{
+            border: 1px solid black;
+            padding: 20px;
+            font-family: arial;
+            box-shadow: 3px 3px 1px black;
+            margin-top: 10px;
+        }
+        section div{
+            margin-right: 40px;
+        }
+        .card:target{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <span><a href="#html">HTML</a></span>
+        <span><a href="#css">CSS</a></span>
+        <span><a href="#js">JS</a></span>
+    </nav>
+    <section>
+        <Div class="card" id="html">
+            <h2>HTML</h2>
+            <p>It is Maarkup Language</p>
+        </Div>
+        <Div class="card" id="css">
+            <h2>CSS</h2>
+            <p>It is Styling Language</p>
+        </Div>
+        <Div class="card" id="js">
+            <h2>JavaScript</h2>
+            <p>It is Scripting Language</p>
+        </Div>
+    </section>
+</body>
+</html>
