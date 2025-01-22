@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <dt>Phone Number</dt>
+        <dd><input type="text" name="txtNumber" placeholder="Phone Number" pattern="\+91\s\d{10}" size="40"></dd>
+        <dt>US Phone Number</dt>
+        <dd><input type="text" name="txtNumber" placeholder="US Phone Number" pattern="\+\(1\)\(\d{3}\)\s\d{6}" size="40"></dd>
+        <dt>Uk Phone Number</dt>
+        <dd><input type="text" name="txtNumber" placeholder="UK Phone Number" pattern="\+\(44\)\(\d{2}\)\d{4}\s\d{4}" size="40"></dd>
+        <dt>SBI IFSC</dt>
+        <dd><input type="text" name="txtSBIIFSC" placeholder="SBI IFSC" pattern="SBIN[0]{4}\d{3}" size="40"></dd><br>
+        <dd>
+            <button name="update" value="UpdateDetails">Update-Button</button>
+        </dd>
+    </form>
+</body>
+</html>

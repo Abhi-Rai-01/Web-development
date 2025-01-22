@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="" name="frmUpdate">
+        <!-- input elements -->
+         <dl>
+            <dt>
+                Adhaar No.
+            </dt>
+            <dd>
+                <input type="text" name="txtAdhaarNo" value="1287838337223783" readonly>
+            </dd>
+            <dt>
+                First Name
+            </dt>
+            <dd>
+                <input type="text" name="txtFirstName" value="Abhi">
+            </dd>
+            <dt>
+                Last Name
+            </dt>
+            <dd>
+                <input type="text" name="txtLastName" value="Rai" minlength="4" maxlength="5">
+            </dd>
+            <dt>
+                DOB
+            </dt>
+            <dd>
+                <input type="text" name="txtDob" value="01/01/2000">
+            </dd>
+            <dt>
+                Email
+            </dt>
+            <dd>
+                <input type="text" name="txtUserEmail" autofocus>
+            </dd>
+            <dt>
+                Password
+            </dt>
+            <dd>
+                <input type="text" name="txtPwd" required>
+            </dd>
+            <dt>
+                Color Name
+            </dt>
+            <dd>
+                <input type="text" name="txtColorName" placeholder="COLOR/COLOUR" pattern="COLOU?R" size="40">
+            </dd>
+            <br>
+            <dd>
+                <input type="text" name="txtColorName" placeholder="COLOR,COLOUR,COLOUUR,COLOUUUR" pattern="COLOU+R" size="40">
+            </dd>
+            <br>
+            <dd>
+                <input type="text" name="txtColorName" placeholder="COLOR,COLOUR,COLOUUR,COLOUUUR" pattern="COLOU*R" size="40">
+            </dd>
+            <br>
+            <dd>
+                <input type="text" name="txtColorName" placeholder="boy,toy,joy" pattern=".oy" size="40">
+            </dd>
+            <br>
+            <dd>
+                <input type="text" name="txtColorName" placeholder="boy,toy,joy" pattern="[A-Za-z0-9_!@#&$]oy" size="40">
+            </dd>
+            <br>
+            <dd>
+                <input type="text" name="txtColorName" placeholder="+91" pattern="\+91[6-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" size="40">
+            </dd>
+            <br>
+            <dd>
+                <input type="text" name="txtColorName" placeholder="this,that,the)" pattern="th(is|at|e)" size="40">
+            </dd>
+            <br>
+            <dd>
+                <input type="text" name="txtColorName" placeholder="" pattern="[^a,z,s]" size="40">
+            </dd>
+            <br>
+         </dl>
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    table{
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+    }
+    caption{
+        font-size: 30px;
+        font-weight: bold;
+        color: green;
+    }
+    th, td{
+        border: 3px solid black;
+    }
+
+    </style>
+</head>
+<body>
+    <table frame="box">
+        <caption>
+            Cricketer details
+        </caption>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Sachin</td>
+                <td>51</td>
+                <td rowspan="2">MI</td>
+            </tr>
+            <tr>
+                <td>Rohit</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td>Kohli</td>
+                <td>38</td>
+                <td>RCB</td>
+            </tr>
+            <tr>
+                <td>Dhoni</td>
+                <td>45</td>
+                <td>CSK</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    Information about players
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style type="text/css">
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <dl>
+            <dt><label for="Username">Username</label></dt>
+            <dd><input type="text" name="txtUsername" id="Username"></dd>
+
+            <dt><label for="password">Password</label></dt>
+            <dd><input type="password" name="txtpwd" id="password"></dd>
+        </dl>
+            <!-- html 4 -->
+             <input type="submit" value="Submit">
+             <input type="reset" value="Reset">
+             <input type="button" value="Print" onclick="java:window.print()">
+
+            <!-- html 5 -->
+             <button><span class="bi bi-person-fill"></span>Submit</button>
+             <button type="reset" class="bi bi-arrow-clockwise">Reset</button>
+             <button type="button" value="print" onclick="java:window.print()" class="bi bi-printer-fill">Print</button>
+    </form>
+</body>
+</html>
