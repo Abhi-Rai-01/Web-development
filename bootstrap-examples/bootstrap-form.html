@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div>
+        <form class="border border-2 border-primary">
+            <h3>Register User</h3>
+            <dl>
+                <dt>
+                    <Label for="Username" class="form-label">Username</Label>
+                </dt>
+                <dd>
+                    <input type="text" name="txtUsername" id="Username">
+                </dd>
+                <dt>
+                    <Label for="Password" class="form-label">Password</Label>
+                </dt>
+                <dd>
+                    <input type="password" name="txtPassword" id="Password">
+                </dd>
+                <dt>
+                    <label for="Cities" class="form-label">Select City</label>
+                </dt>
+                <dd>
+                    <select name="listCities" id="Cities">
+                        <option value="BLR">Bengaluru</option>    
+                        <option value="HYD">Hydrabad</option>    
+                        <option value="MUM">Mumbai</option>    
+                    </select>
+                </dd>
+                <dt>
+                    <label for="Price-range" class="form-label">Price Range</label>
+                </dt>
+                <dd>
+                    <input type="range" id="Price-range">
+                </dd>
+                <dt>
+                    <label for="Subscription" class="form-label">Subscribed</label>
+                </dt>
+                <dd>
+                    <input type="checkbox" role="switch" id="Subscription">
+                </dd>
+            </dl>
+            <button>
+                <span></span>
+            </button>
+        </form>
+    </div>
+</body>
+</html>
