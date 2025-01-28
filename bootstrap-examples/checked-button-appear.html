@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style type="text/css">
+        .accept + span{
+            color: red;
+        }
+        .accept:checked + span{
+            color: green;
+        }
+        .accept ~ button{
+            display: none;
+        }
+        .accept:checked ~ button{
+            display: block;
+        }
+        textarea{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <Textarea cols="50" rows="15" readonly>
+            Our terms and Services
+        </Textarea>
+        <div>
+            <input type="checkbox" name="" id="" class="accept">
+            <span>I Accept</span><br><br>
+            <button class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</body>
+</html>

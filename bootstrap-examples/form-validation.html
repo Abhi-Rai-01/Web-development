@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style type="text/css">
+        input:required{
+            border: 2px solid red;
+        }
+        input:valid{
+            border: 2px solid black;
+        }
+        input:required ~ span{
+            color: red;
+        }
+        input:valid ~ span{
+            display: none;
+        }
+        input:required ~ p{
+            color: red;
+        }
+        input:valid ~ p{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <dl>
+            <dt class="fw-bold">Username</dt>
+            <dd>
+                <input type="text" name="" id="" required><span>*</span>
+                <p>Username is required</p>
+            </dd>
+            
+            <dt class="fw-bold">Password</dt>
+            <dd>
+                <input type="password" name="" id="" class="" required><span>*</span>
+                <p>Password is required</p>
+            </dd>
+            
+            <dt class="fw-bold">Age</dt>
+            <dd>
+                <input type="text" name="" id="" required pattern="[1-9][0-9]" required><span>*</span>
+                <p>Age is required</p>
+            </dd>
+            
+            <dt class="fw-bold">Mobile</dt>
+            <dd>
+                <input type="text" name="" id="" pattern="+91[6-9]{1}[0-9]{9}" required><span>*</span>
+                <p>+91 - 10 digits required</p>
+            </dd>
+
+            
+        </dl>
+    </form>
+</body>
+</html>
