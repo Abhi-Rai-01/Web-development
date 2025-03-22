@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="accordion w-25 m-5" id="acc">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button bg-danger text-white text-center" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#homeItems">
+                    Home
+                </button>
+            </h2>
+            <div class="accordion-collapse collapse show" data-bs-parent="#acc" id="homeItems">
+                <div>
+                    <ul>
+                        <li>
+                            About us
+                        </li>
+                        <li>
+                            Know More
+                        </li>
+                        <li>
+                            Contents
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button bg-danger text-white text-center d-flex" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#fashionItems">
+                    Fashion
+                </button>
+            </h2>
+            <div class="accordion-collapse collapse" data-bs-parent="#acc" id="fashionItems">
+                <div>
+                    <ul>
+                        <li>
+                            Kids
+                        </li>
+                        <li>
+                            Men
+                        </li>
+                        <li>
+                            Women
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button bg-danger text-white text-center" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#electronicsItems">
+                    Electronics
+                </button>
+            </h2>
+            <div class="accordion-collapse collapse" data-bs-parent="#acc" id="electronicsItems">
+                <div>
+                    <ul>
+                        <li>
+                            Mobile phones
+                        </li>
+                        <li>
+                            Home appliances
+                        </li>
+                        <li>
+                            Digital accessories
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

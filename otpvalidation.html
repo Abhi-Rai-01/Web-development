@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <dl>
+        <dt>Enter OTP</dt>
+        <dd>
+            <input type="text" name="" id="otp" size="5" onblur="validotp()">
+            <p id="info">
+
+            </p>
+        </dd>
+
+
+        <dt>Name</dt>
+        <dd>
+            <input type="text" name="" id="txtName" placeholder="ENTER IN UPPERCASE" onkeyup="changeCase()">
+        </dd>
+    </dl>
+
+
+    <script type="text/javascript">
+        function validotp() {
+            let otp = document.getElementById("otp");
+            let info = document.getElementById("info");
+
+            otpresult = otp.value;
+
+            condition = otpresult === "3456";
+
+            if (condition) {
+                info.textContent = "OTP VALID";
+                info.className = "success";
+            } else {
+                info.textContent = "OTP INVALID";
+                info.className = "failure";
+            }
+        }
+
+        function changeCase() {
+            let name = document.getElementById("txtName");
+
+            let data = name.value.toUpperCase();
+
+            name.value = data;
+        }
+    </script>
+</body>
+
+</html>

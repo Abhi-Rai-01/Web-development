@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --bg-color: black;
+            --color: white;
+        }
+        .darktheme{
+            background-color: var(--bg-color);
+            color: var(--color);
+        }
+    </style>
+</head>
+<body>
+    <button>Toggle to Darktheme</button>
+</body>
+</html>
+<script type="text/javascript">
+    document.querySelector("button")
+    .addEventListener("click",function(){
+        let rootElement = document.documentElement;
+        console.log(rootElement);
+
+        let classattribute = rootElement.classList;
+
+        classattribute.contains("darktheme")?(classattribute.remove("darktheme"),this.textContent = "Toggle to DarkTheme"):(classattribute.add("darktheme"),this.textContent = "Toggle to LightTheme") ;
+    })
+</script>

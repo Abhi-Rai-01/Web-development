@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background-color: #B65E4E;
+            color: aliceblue;
+            margin: 0px -12px;
+            padding: 10px;
+        }
+
+        header div {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        @media screen and (orientation: landscape) {
+            header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .landscape-nav span,
+            .landscape-aside span {
+                margin-left: 10px;
+                font-size: 18px;
+            }
+
+            .landscape-nav span:hover,
+            .landscape-aside span:hover {
+                color: black;
+            }
+
+            aside+span {
+                display: none;
+            }
+
+            section {
+                display: none;
+            }
+        }
+
+        @media screen and (orientation: portrait) {
+
+            .landscape-nav,
+            .landscape-aside {
+                display: none;
+            }
+
+            header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            span:hover {
+                color: black;
+            }
+
+            .portrait-nav {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .portrait-nav span:hover,
+            .portrait-aside span:hover {
+                color: #B65E4E
+            }
+
+            .hidden-nav {
+                background-color: #f9dad5;
+                margin: 0px -12px;
+                padding: 10px;
+                transition: all 1s ease-in-out;
+            }
+            .appear{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <header>
+        <div>Shopper.</div>
+
+        <nav class="landscape-nav">
+            <span>Home</span>
+            <span>Catalog</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blog</span>
+            <span>Docs</span>
+        </nav>
+
+        <aside class="landscape-aside">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart2"></span>
+        </aside>
+
+        <span class="bi bi-list" id="list-icon"></span>
+    </header>
+    <section class="hidden-nav appear">
+        <nav class="portrait-nav">
+            <span>Home</span>
+            <span>Catalog</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blog</span>
+            <span>Docs</span>
+        </nav>
+        <aside class="portrait-aside">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart2"></span>
+        </aside>
+    </section>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    document.querySelector("#list-icon").addEventListener("click", function(){
+        document.querySelector(".hidden-nav").classList.toggle("appear");
+    });
+</script>

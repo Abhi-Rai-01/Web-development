@@ -8,31 +8,31 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body class="container-fluid">
-    <div class="h3 mt-3">
+    <div class="h3 mt-3 mb-3">
         EMI Calculator
     </div>
 
     <div class="row mt-2 w-100">
         <div class="col">
-            Amount you need <input type="text" name="" id="" class="" value="&#8377; 50,000">
+            Amount you need &#8377; <input type="text" name="" id="amount" class="">
         </div>
         <div class="col">
-            For <input type="text" name="" id="" class="" value="1" size="4"> years
+            For <input type="text" name="" id="time" class="" size="4"> years
         </div>
         <div class="col">
-            Interest rate <input type="text" name="" id="" class="" value="10.5" size="4"> %
+            Interest rate <input type="text" name="" id="rate" class="" size="4"> %
         </div>
     </div>
 
     <div class="row mt-2 w-100">
         <div class="col w-100">
-            <input type="range" name="" id="" class="w-100">
+            <input type="range" name="" id="rangeAmount" class="w-100" min="50000" max="400000" onchange="amountRange()">
         </div>
         <div class="col w-100">
-            <input type="range" name="" id="" class="w-100">
+            <input type="range" name="" id="rangeTime" class="w-100" min="1" max="5" onchange="timeRange()">
         </div>
         <div class="col w-100">
-            <input type="range" name="" id="" class="w-100">
+            <input type="range" name="" id="rangeRate" class="w-100" min="10.5" max="21" step="0.1" onchange="rateRange()">
         </div>
     </div>
 
@@ -51,10 +51,48 @@
         </div>
     </div>
 
-    <div class="row w-100">
+    <div class="row w-100 mt-3">
         <span class="float-end">
-            <button class="btn btn-primary">Calculate</button>
+            <button class="btn btn-primary" onclick="calculateEMI()">Calculate</button>
         </span>
     </div>
+    <p id="calculatedEMI">
+
+    </p>
+
+
+
+
+    <script type="text/javascript">
+        function amountRange(){
+            let amountData = document.getElementById("rangeAmount");
+            let amount = document.getElementById("amount")
+
+            amount.value = amountData.value;
+        }
+        function timeRange(){
+            let timeData = document.getElementById("rangeTime");
+            let time = document.getElementById("time");
+
+            time.value = timeData.value;
+        }
+        function rateRange(){
+            let rateData = document.getElementById("rangeRate");
+            let rate = document.getElementById("rate");
+
+            rate.value = rateData.value;
+        }
+
+        function calculateEMI(){
+            let parseFloat().amount = document.getElementById("amount");
+            let time = document.getElementById("time");
+            let rate = document.getElementById("rate");
+
+            EMI.toFixed(2) = amount * rate * ((Math.pow(1+rate, time*12))/((Math.pow(1+rate, time*12))-1));
+
+            let emiinfo = document.getElementById("calculatedEMI");
+            emiinfo.innerHTML = `Your total EMI is &#8377; ${EMI}`;
+        }
+    </script>
 </body>
 </html>

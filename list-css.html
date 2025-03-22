@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        ul{
+            list-style-type: none;
+            border: 1px solid black;
+            padding: 10px 50px;
+            width: 100px;
+            display: inline-block;
+        }
+        .outside li{
+            border: 1px solid black;
+            margin: 10px;
+            list-style-image: url(public/images/gear5.gif);
+            list-style-position: outside;
+        }
+        .inside li{
+            border: 1px solid black;
+            margin: 10px;
+            list-style-image: url(public/images/gear5.gif);
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+    <ul class="outside">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+    <ul class="inside">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+</body>
+</html>
