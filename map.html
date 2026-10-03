@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let map = new map([
+            ['name', 'sachin'], 
+            ['role', 'batman']
+        ]);
+
+        console.log(map);
+
+        for(const [key, value] of map){
+            console.log(key, value);
+        }
+
+
+
+
+
+        
+        var ID = Symbol();
+        var obj = {
+            [ID] : 101,
+            "Name" : "TV",
+            "Price" : 55000.35,
+            "Stock" : true
+        }
+
+        for(const key in obj){
+            console.log(key);
+        }
+
+        console.log("Product with id", obj[ID], "is dispatched...");
+    </script>
+</body>
+</html>

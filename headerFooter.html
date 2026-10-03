@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style type="text/css">
+        /* header styling */
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            margin: 30px -8px 25px -8px;
+
+            font-family: arial;
+        }
+
+        .headerShopper {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .tabs,
+        .icons {
+            margin-top: 10px;
+        }
+
+        .tabs span {
+            padding-right: 30px;
+        }
+
+        .icons span {
+            padding-right: 10px;
+        }
+
+        .items {
+            font-size: 12px;
+            color: white;
+            background-color: salmon;
+            vertical-align: super;
+
+            height: 13px;
+            width: 2px;
+            padding-left: 3px;
+            display: inline-block;
+            border-radius: 20px;
+        }
+
+        article {
+            background-color: black;
+            color: white;
+            margin: 20px -8px 0px -8px;
+            padding: 10px;
+        }
+
+        .bi-lightning-charge-fill {
+            color: goldenrod;
+            font-size: 12px;
+        }
+
+        /* Section Styling */
+        section {
+            height: 60vh;
+        }
+
+        /* Footer Styling */
+        footer {
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+            background-color: black;
+
+            color: white;
+
+            padding: 40px;
+            margin: 0px -8px -8px -8px;
+        }
+
+        .footerShopper {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .footerIcons span {
+            color: gray;
+            padding: 4px;
+        }
+
+        .details {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .details~span {
+            display: block;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header Part-->
+    <header>
+        <div class="headerShopper">
+            Shopper.
+        </div>
+        <nav class="tabs">
+            <span>Home</span>
+            <span>Catalog</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blogs</span>
+            <span>Docs</span>
+        </nav>
+        <nav class="icons">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart-plus">
+                <span class="items">2</span>
+            </span>
+        </nav>
+    </header>
+    <article>
+        <marquee>
+            <div>
+                <spsn class="bi bi-lightning-charge-fill"></spsn>
+                <spsn>HAPPY HOLIDAY DEALS ON EVERYTHING</spsn>
+                <spsn class="bi bi-lightning-charge-fill"></spsn>
+            </div>
+        </marquee>
+    </article>
+
+    <!--Section Part-->
+    <section>
+
+    </section>
+
+    <!-- Footer Part -->
+    <footer>
+        <div>
+            <div class="footerShopper">
+                Shopper.
+            </div>
+
+            <div class="footerIcons">
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-github"></span>
+            </div>
+        </div>
+        <div>
+            <div class="details">
+                Support
+            </div>
+            <span>Contact Us</span>
+            <span>FAQs</span>
+            <span>Szie Guide</span>
+            <span>Shipping & Returns</span>
+        </div>
+        <div>
+            <div class="details">
+                Shop
+            </div>
+            <span>Men's Shopping</span>
+            <span>Women's Shopping</span>
+            <span>Kids' Shopping</span>
+            <span>Discounts</span>
+        </div>
+        <div>
+            <div class="details">
+                Company
+            </div>
+            <span>Our Story</span>
+            <span>Careers</span>
+            <span>Terms & Conditions</span>
+            <span>Privacy & Cookie policy</span>
+        </div>
+        <div>
+            <div class="details">
+                Contact
+            </div>
+            <span>1-202-555-0105</span>
+            <span>1-202-555-0106</span>
+            <span>help@shopper.com</span>
+        </div>
+    </footer>
+</body>
+</html>

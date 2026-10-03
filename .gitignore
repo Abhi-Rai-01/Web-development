@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Local IDE configuration
+.vscode/
+
+# Large media files (optional, recommended if videos are >5-10MB)
+public/videos/*
+
+# Personal documents
+public/*.pdf
+public/*.docx
+public/*.doc

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+
+    <div>
+        <ol id="c1">
+
+        </ol>
+    </div>
+
+    <script type="text/javascript">
+        let container = document.getElementById("container");
+        let arr = ['All', 'Electronic', 'Mobiles', 'KidsFashion'];
+        arr.forEach(function(value) {
+            let res = `<input type="checkbox"/><label>${value}</label><br>`    
+            container.innerHTML += res;
+        });
+
+
+
+        let c1 = document.getElementById("c1");
+        arr.forEach(function(value){
+            let res1 = `<li>${value}</li>`
+            c1.innerHTML += res1;
+        });
+    </script>
+</body>
+</html>

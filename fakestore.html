@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <script type="text/javascript">
+        function bodyLoad() {
+            const contentsURL = "https://fakestoreapi.com/products/categories";
+
+            fetch(contentsURL).then(function (response) {
+                return response.json();
+            }).then(function (contents) {
+                const nav = document.getElementById("nav");
+                let str = "";
+
+                contents.forEach(function (content) {
+                    let upperContent = content.toUpperCase();
+                    str += `<span class="ms-3">${upperContent}</span>`;
+                });
+
+                nav.innerHTML += str;
+            })
+
+            // ----------------------------------------------------------------------------- category selection
+
+            const categories = "https://fakestoreapi.com/products/categories"
+
+            fetch(categories).then(function (response) {
+                return response.json();
+            }).then(function (categoryName) {
+                const catSelect = document.getElementById("catSelect");
+
+                
+            })
+
+        }
+    </script>
+</head>
+
+<body class="" onload="bodyLoad()">
+    <header class="bg-black text-white d-flex justify-content-between p-3 align-content-center align-items-center">
+        <div class="h4">
+            FakeStore
+        </div>
+
+        <div id="nav" class="">
+            <span>HOME</span>
+        </div>
+
+        <div>
+            <button class="btn btn-warning">
+                <span class="bi bi-cart">&nbsp;Your Cart</span>
+            </button>
+        </div>
+    </header>
+
+
+    <article class="mt-1 bg-black text-white text-center p-1">
+        <marquee behavior="" direction="">
+            <span class="bi bi-lightning-charge-fill text-warning"></span>
+            <span class="fw-bold"> Holiday Deals 50% Off - Limited Offer </span>
+            <span class="bi bi-lightning-charge-fill text-warning"></span>
+        </marquee>
+    </article>
+
+
+    <section class="mt-2 container-fluid">
+        <nav>
+            <div>Select Category</div>
+            <select name="Category" id="catSelect">
+                <option value="all" selected>All</option>
+            </select>
+
+        </nav>
+
+        <div></div>
+        <div></div>
+    </section>
+</body>
+
+</html>

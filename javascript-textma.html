@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p{
+            font-weight: ;
+        } */
+
+        .size{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>fontsize</dt>
+        <dd><button type="button" id="fs" min="20">add</dd>
+        <br>
+        <dt>font color</dt>
+        <dd><input type="color" id="fc"></dd>
+        <br>
+        <dt>font weight</dt>
+        <dd><input type="range" id="fw" min="0" max="900" step="100"></dd>
+        <br>
+        <dt>Text align</dt>
+        <dd><select name="" id="">
+            <option value="">left</option>
+            <option value="">center</option>
+            <option value="">right</option>
+        </select></dd>
+        <br>
+        <dt>font style</dt>
+        <dd><select name="" id="">
+            <option value="">normal</option>
+            <option value="">italic</option>
+            <option value="">algerian</option>
+        </select></dd>
+    </dl>
+
+    <p>Hello World</p>
+
+    <script type="text/javascript">
+        let p = document.querySelector("p");
+
+        
+        let fs = document.getElementById("fs");
+        fs.addEventListener("click", function(){
+            p.classList.toggle("size");
+        });
+
+
+        let fc= document.getElementById("fc");
+        fc.addEventListener("change",function(){
+            p.style.color = fc.value;
+        });
+
+
+        let fw = document.getElementById("fw");
+        fw.addEventListener("change",function(){
+            p.style.fontWeight = fw.value;
+        });
+
+
+
+
+    </script>
+</body>
+</html>

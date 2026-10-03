@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Code</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <script type="text/javascript">
+        function bodyLoad() {
+
+            //call api
+            const URL = "https://fakestoreapi.com/products/category/jewelery";
+            fetch(URL).then(function (response){
+                return response.json();
+            }).then(function (products){
+                products.map(function(product){
+
+                    var tr = document.createElement("tr");
+
+                    var tdId = document.createElement("td");
+                    var tdPrice = document.createElement("td");
+                    var tdImg = document.createElement("td");
+                    var tdRatings = document.createElement("td");
+
+                    //filling the values for all td elements before appending
+                    tdId.textContent = product.id;
+                    tdPrice.textContent = product.price;
+                    tdImg.innerHTML = `<img src='${product.image}' width='100' height='100'>`
+                    tdRatings.textContent = product.rating.rate;
+
+                    //appending all child elements to tr
+                    tr.appendChild(tdId);
+                    tr.appendChild(tdPrice);
+                    tr.appendChild(tdImg);
+                    tr.appendChild(tdRatings);
+
+                    //appending all child elements to tr
+                    document.querySelector("tbody").appendChild(tr);
+                })
+            })
+        }
+    </script>
+    <style type="text/css">
+       
+    </style>
+</head>
+
+<body class="container-fluid" onload="bodyLoad()">
+    <h3>Flipkart Details</h3>
+
+    <table class="table table-hover" width="100%" cellspacing="25" cellpading="5">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Ratings</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>

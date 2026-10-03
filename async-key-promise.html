@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function prepareFood(){
+            return new Promise(function (resolve, reject){
+
+                let isFoodAvailable = true;
+
+                setTimeout(function() {
+                    if(isFoodAvailable){
+                        resolve("Food is available can be served....")
+                    } else {
+                        reject("Food is not available");
+                    }
+                }, 5000);
+            })
+        }
+
+        async function orderFood(){
+            console.log("Customers order the food");
+
+            try{
+                let promise = await prepareFood();
+                console.log(promise);
+            } catch (error){
+                console.log(error);
+            }
+        }
+
+        console.log("Waiter serves the water");
+    </script>
+</body>
+</html>

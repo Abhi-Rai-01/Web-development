@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="slash-header">
+        <div>
+            Shopper.
+        </div>
+
+        <div class="tabs">
+
+        </div>
+
+        <div id="slash-date">
+
+        </div>
+    </header>
+
+    <header>
+        <div>
+            Shopper.
+        </div>
+
+        <div class="tabs">
+
+        </div>
+
+        <div id="slash-date">
+
+        </div>
+    </header>
+
+    <header>
+        <div>
+            Shopper.
+        </div>
+
+        <div class="tabs">
+
+        </div>
+
+        <div id="slash-date">
+
+        </div>
+    </header>
+
+    <script type="text/javascript">
+        let tabName = ["Home", "About", "Contact"];
+        let date = new Date();
+        
+        let str = "";
+        for(const tname of tabName){
+            str += `<span style="margin-right: 10px;">${tname}</span>`;
+        }
+        document.getElementsByClassName("tabs")[0].innerHTML = str;
+        document.getElementsByClassName("tabs")[1].innerHTML = str;
+        document.getElementsByClassName("tabs")[2].innerHTML = str;
+        
+        {
+            let slash = document.getElementById("slash-date");
+        }
+
+
+    </script>
+</body>
+</html>

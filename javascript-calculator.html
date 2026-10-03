@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body class="container-fluid">
+    <div class="w-25">
+        <dl>
+            <h3>Verify Mobile</h3>
+            <dt>
+                Select your Country
+                <div class="border border-1 border-black mb-2 mt-2 p-4 w-25">
+                    <img src="" alt="">
+                </div>
+            </dt>
+            <dd>
+                <select name="Country" id="country-select" class="p-1 w-100">
+                    <option value="" disabled selected>Select Country</option>
+                    <option value="IND">India</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="USA">USA</option>
+                </select>
+            </dd>
+
+            <dt>
+                <label for="phone">Your Mobile</label>
+            </dt>
+            <dd>
+                <input type="text" name="" id="phone" value="" class="p-1" size="36" pattern="" placeholder="">
+            </dd>
+
+            <button class="btn btn-primary container-fluid" id="verify">Verify</button>
+
+        </dl>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("country-select").addEventListener("change", function() {
+            
+        });
+
+    </script>
+</body>
+
+</html>

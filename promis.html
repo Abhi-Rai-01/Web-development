@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Example</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let promise = new Promise(function(resolve, reject){
+            let isFoodAvailable = false; // Change to true to see resolve in action
+
+            setTimeout(function(){
+                if (isFoodAvailable) {
+                    resolve("Food is Available and can be served");
+                } else {
+                    reject("Food is not Available");
+                }
+            }, 2000); // Simulates waiting for 2 seconds
+        });
+
+        console.log("Customer orders the food");
+
+        promise
+            .then(function(msg) { // receive resolved value here
+                console.log(msg);
+            })
+            .catch(function(error) { // receive rejected value here
+                console.log(error);
+            });
+    </script>
+</body>
+</html>
